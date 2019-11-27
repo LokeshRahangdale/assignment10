@@ -48,7 +48,7 @@ class SaveProduct(View):
 				return render(request,"addproduct.html",{"massage":"Please Provide Valid Data"})
 		except requests.exceptions.ConnectionError:
 			return render(request,"addproduct.html",{"massage":"Server Not Available"})
-	def put(self,request,*args,**kwargs):
+	#def put(self,request,*args,**kwargs):
 		
 
 
